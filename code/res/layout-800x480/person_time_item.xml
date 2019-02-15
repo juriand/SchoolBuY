@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/itemIcon"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@+id/itemIcon"
+        android:text="物品名称" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemIcon" />
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/item_line_bottom" />
+
+    <ImageButton
+        android:id="@+id/detail"
+        android:layout_width="10dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="5dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person_record_arrow" />
+
+    <TextView
+        android:id="@+id/timeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/detail"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/detail"
+        android:text="查看所有轨迹"
+        android:textColor="#959596"
+        android:textSize="12sp" />
+
+</RelativeLayout>

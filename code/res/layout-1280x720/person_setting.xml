@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaedf1" >
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/person_button_selector" />
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/title" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="设置"
+        android:textColor="#ffffffff"
+        android:textSize="19sp" />
+
+    <ImageButton
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_above="@+id/exit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="65dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_button_selector" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/aboutButton"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="11dp"
+        android:text="关于我们"
+        android:textColor="#959596"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000" />
+
+    <ImageButton
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="150dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_button_selector" />
+
+    <ImageButton
+        android:id="@+id/pushButton"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/clearButton"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_button_selector" />
+
+    <TextView
+        android:id="@+id/clearText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/clearButton"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="11dp"
+        android:text="清除聊天记录"
+        android:textColor="#959596"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/pushText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/pushButton"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="11dp"
+        android:text="消息推送"
+        android:textColor="#959596"
+        android:textSize="17sp" />
+
+    <ToggleButton
+        android:id="@+id/pushToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/pushButton"
+        android:layout_marginRight="9dp"
+        android:background="#00000000"
+        android:button="@drawable/setting_toggle_push"
+        android:textOff=""
+        android:textOn="" />
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="18dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_button_selector" />
+
+    <TextView
+        android:id="@+id/profileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/profileButton"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="11dp"
+        android:text="个人资料"
+        android:textColor="#959596"
+        android:textSize="17sp" />
+
+    <ImageButton
+        android:id="@+id/secureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/profileButton"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_button_selector" />
+
+    <TextView
+        android:id="@+id/secureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/secureButton"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="11dp"
+        android:text="账号安全"
+        android:textColor="#959596"
+        android:textSize="17sp" />
+
+    <ImageButton
+        android:id="@+id/detail"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/profileButton"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="13dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_record_arrow" />
+
+    <ImageButton
+        android:id="@+id/ImageButton01"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/profileButton"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="13dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_record_arrow" />
+
+    <ImageButton
+        android:id="@+id/ImageButton02"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/aboutButton"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="13dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_record_arrow" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/exit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="退出账号"
+        android:textColor="#959596"
+        android:textSize="17sp" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/timeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="标题"
+        android:textColor="#959596"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timeNumber"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/item_line_bottom" />
+
+    <TextView
+        android:id="@+id/workBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeNumber"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="10dp"
+        android:text="正文"
+        android:textColor="#959596"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/workBody" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/itemIcon"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@+id/itemIcon"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemIcon"
+        android:layout_alignLeft="@+id/itemName"
+        android:layout_marginBottom="9dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/itemStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemName"
+        android:layout_marginRight="43dp" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemIcon" />
+
+    <Button
+        android:id="@+id/sellAgain"
+        android:layout_width="85dp"
+        android:layout_height="26dp"
+        android:layout_above="@+id/itemPrice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/item_button"
+        android:text="编辑"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</RelativeLayout>

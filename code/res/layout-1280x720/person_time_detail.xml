@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaedf1" xmlns:app="http://schemas.android.com/apk/res/com.example.schoolbuy">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/time_detail_back" />
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/time_detail_title" />
+
+    <ImageView
+        android:id="@+id/load_nothing"
+        android:layout_width="74dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/load_icon_nothing"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000" />
+
+    <ImageButton
+        android:id="@+id/loadAgain"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/list_load_again" />
+
+    <com.schoolbuy.view.CircleImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        app:border_color="#ffffff" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="物品名称" />
+
+</RelativeLayout>

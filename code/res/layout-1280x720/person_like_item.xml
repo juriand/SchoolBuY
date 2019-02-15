@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:longClickable="true" xmlns:app="http://schemas.android.com/apk/res/com.example.schoolbuy">
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/itemIcon"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/itemIcon"
+        android:text="物品名称"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/itemStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemName"
+        android:layout_marginRight="43dp" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemIcon" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemName"
+        android:layout_below="@+id/itemName"
+        android:layout_marginTop="7dp"
+        android:text="物品价格"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/sellAgain"
+        android:layout_width="85dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/itemName"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/item_button"
+        android:focusable="false"
+        android:text="查看详情"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkDelete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/itemIcon"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/check_delete"
+        android:clickable="false"
+        android:visibility="gone" />
+
+    <com.schoolbuy.view.CircleImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/checkDelete"
+        android:visibility="visible"
+        app:border_color="#ffffff"
+        app:border_width="3dp" />
+
+</RelativeLayout>

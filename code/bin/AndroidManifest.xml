@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schoolbuy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.CAMERA" /> 
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-feature android:name="android.hardware.camera" /> 
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" /> 
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />  
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />   
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />  
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />     
+	<uses-permission android:name="android.permission.BROADCAST_STICKY" />  
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <!-- Push SDK权限 -->
+    <permission
+        android:name="cn.bmob.permission.push"
+        android:protectionLevel="normal" >
+    </permission>
+    <uses-permission android:name="cn.bmob.permission.push" /> <!-- 添加自定义的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.schoolbuy.demo.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.schoolbuy.ui.MainActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Theme.IOSched">>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.schoolbuy.ui.MainSee"></activity>
+        <activity android:name="com.schoolbuy.ui.MainWork"></activity>
+        <activity android:name="com.schoolbuy.ui.MainAuction"></activity>
+        <activity android:name="com.schoolbuy.ui.MainExchange"></activity>
+        <activity android:name="com.schoolbuy.ui.MainWant"></activity>
+        <activity android:name="com.schoolbuy.ui.MainBuy"></activity>
+        <activity 
+            android:name="com.schoolbuy.ui.NewItemActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity 
+            android:name="com.schoolbuy.ui.NewMessActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.schoolbuy.ui.PersonActivity"></activity>
+        <activity android:name="com.schoolbuy.ui.PersonItem"></activity>
+        <activity 
+            android:name="com.schoolbuy.ui.PersonChat"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.schoolbuy.ui.PersonRecord"></activity>
+        <activity android:name="com.schoolbuy.ui.PersonRecordDetail"></activity>
+        <activity android:name="com.schoolbuy.ui.PersonSetting"></activity>
+        <activity android:name="com.schoolbuy.ui.PersonTime"></activity>
+        <activity android:name="com.schoolbuy.ui.PersonTimeDetail"></activity>
+        <activity android:name="com.schoolbuy.ui.PersonLike"></activity>
+        <activity android:name="com.schoolbuy.ui.PersonItemDetail"></activity>
+        <activity android:name="com.schoolbuy.ui.PersonCredit"></activity>
+        
+        <activity android:name="com.schoolbuy.ui.LogActivity"></activity>
+        <activity android:name="com.schoolbuy.ui.RegisterActivity"></activity>
+        <activity 
+            android:name="com.schoolbuy.ui.SearchActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.schoolbuy.ui.PhotoActivity"></activity>
+        <activity 
+            android:name="com.schoolbuy.ui.ChatActivity"
+            android:windowSoftInputMode="adjustPan"> 
+        </activity>
+        <activity android:name="com.schoolbuy.cropimage.CropImage"></activity>
+        
+        <!-- IM聊天所需的Push start-->
+         <service
+             android:name="cn.bmob.push.lib.service.PushService"
+             android:exported="true"
+             android:label="PushService"
+             android:permission="cn.bmob.permission.push"
+             android:process="cn.bmob.push" >
+            <intent-filter>
+                <action android:name="cn.bmob.push.lib.service.PushService" />
+                </intent-filter>
+          </service>
+          
+         <receiver android:name="cn.bmob.push.PushReceiver" >
+             <intent-filter android:priority="2147483647" > <!-- 优先级加最高 -->
+         <!-- 系统启动完成后会调用 -->
+         <action android:name="android.intent.action.BOOT_COMPLETED" />
+         <!-- 解锁完成后会调用 -->
+         <action android:name="android.intent.action.USER_PRESENT" />
+         <!-- 监听网络连通性 -->
+         <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+         </intent-filter>     
+         </receiver>
+
+         <!--聊天消息接收器 -->
+         <receiver android:name="com.schoolbuy.demo.MyMessageReceiver">
+             <intent-filter>
+                 <action android:name="cn.bmob.push.action.MESSAGE" />
+             </intent-filter>
+         </receiver>
+         
+         <!-- IM聊天所需的Push end-->
+
+         <!-- 个性功能中的启动定时检测服务，可选功能 -->
+         <service android:name="cn.bmob.im.poll.BmobPollService">
+     		<intent-filter>
+         		<action android:name="cn.bmob.im.service.BmobPollService"/>
+     		</intent-filter>
+ 		</service>
+        
+    </application>
+
+</manifest>

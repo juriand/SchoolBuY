@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/com/schoolbuy/adapter/ItemAdapter.java=UTF-8
+encoding//src/com/schoolbuy/adapter/PersonItemAdapter.java=UTF-8
+encoding//src/com/schoolbuy/adapter/PersonLikeAdapter.java=UTF-8
+encoding//src/com/schoolbuy/adapter/RecordAdapter.java=UTF-8
+encoding//src/com/schoolbuy/adapter/TimeAdapter.java=UTF-8
+encoding//src/com/schoolbuy/adapter/TimeLineAdapter.java=UTF-8
+encoding//src/com/schoolbuy/adapter/ViewHolder.java=UTF-8
+encoding//src/com/schoolbuy/adapter/WantAdapter.java=UTF-8
+encoding//src/com/schoolbuy/adapter/WorkAdapter.java=UTF-8
+encoding//src/com/schoolbuy/ui/PersonItemDetail.java=UTF-8
+encoding//src/com/schoolbuy/ui/PersonRecordDetail.java=UTF-8

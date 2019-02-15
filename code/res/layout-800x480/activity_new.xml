@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1fbba6" >
+
+        <ImageButton
+            android:id="@+id/send"
+            android:layout_width="240dp"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_send_button" />
+
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="240dp"
+            android:layout_height="130dp"
+            android:layout_above="@+id/send"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:src="@drawable/add_input" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/top"
+            android:layout_alignTop="@+id/top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:background="#00000000"
+            android:ems="10"
+            android:hint="输入宝贝名称"
+            android:inputType="text"
+            android:textColor="#9d9a9a"
+            android:textColorHint="#cdcacb"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputIntro"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/top"
+            android:layout_alignLeft="@+id/top"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="6dp"
+            android:background="#00000000"
+            android:ems="10"
+            android:hint="一句话介绍"
+            android:inputType="text"
+            android:textColor="#9d9a9a"
+            android:textColorHint="#cdcacb"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputPrice"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/top"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/inputName"
+            android:background="#00000000"
+            android:ems="10"
+            android:hint="输入价格"
+            android:inputType="numberDecimal"
+            android:textColor="#9d9a9a"
+            android:textColorHint="#cdcacb"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputTag"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/inputIntro"
+            android:layout_alignLeft="@+id/inputName"
+            android:layout_marginBottom="12dp"
+            android:background="#00000000"
+            android:ems="10"
+            android:hint="贴上两个标签(标签用空格隔开)"
+            android:inputType="text"
+            android:textColor="#9d9a9a"
+            android:textColorHint="#cdcacb"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/kindText"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/inputTag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="#00000000"
+            android:clickable="true"
+            android:ems="10"
+            android:inputType="text"
+            android:text="选择宝贝分类"
+            android:textColor="#f8aa33"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/addImage"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_above="@+id/top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_item_icon"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/aboutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/addImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="填写你的宝贝信息"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Enter the details"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

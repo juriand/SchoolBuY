@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="17dp"
+        android:background="#00000000"
+        android:src="@drawable/photo_close" />
+
+    <ImageView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/photo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo_choose" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/close"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/yes"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/choose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo_yes_button" />
+
+    <ImageButton
+        android:id="@+id/contact"
+        android:layout_width="46dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/choose"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo_buy" />
+
+    <ImageButton
+        android:id="@+id/exchange"
+        android:layout_width="46dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/choose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo_exchange" />
+
+    <ImageButton
+        android:id="@+id/auction"
+        android:layout_width="46dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/photo"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo_auction" />
+
+</RelativeLayout>

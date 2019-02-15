@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/top"
+        android:layout_marginLeft="46dp"
+        android:layout_toRightOf="@+id/top"
+        android:text="TextView"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/newPrice"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/top"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/top"
+        android:ems="10"
+        android:hint="请输入新的价格"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/newTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newIntro"
+        android:layout_alignRight="@+id/newIntro"
+        android:layout_below="@+id/newIntro"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="输入新标签(标签空格隔开)" />
+
+    <EditText
+        android:id="@+id/newIntro"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/top"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="请输入新的简介" />
+
+</RelativeLayout>

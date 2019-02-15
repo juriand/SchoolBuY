@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaedf1"
+    android:gravity="right" xmlns:app="http://schemas.android.com/apk/res/com.example.schoolbuy">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/title" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/back"
+        android:layout_alignBottom="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:text="物品详情"
+        android:textColor="#ffffffff"
+        android:textSize="19sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="90dp"
+        android:background="#ffffffff" >
+
+        <TextView
+            android:id="@+id/aboutText"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tag3" />
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/item_line_top" />
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="85dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/photo"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/item_button"
+            android:text="我要交易"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="315dp"
+            android:layout_height="225dp"
+            android:layout_below="@+id/userImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/item_image_load" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/photo"
+            android:layout_below="@+id/userImage"
+            android:text="宝贝名称"
+            android:textColor="#8d8d8d"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/itemName"
+            android:layout_alignBottom="@+id/itemName"
+            android:layout_alignRight="@+id/photo"
+            android:text="价格"
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/photo"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/item_line_bottom" />
+
+        <TextView
+            android:id="@+id/introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/photo"
+            android:layout_below="@+id/photo"
+            android:layout_marginTop="5dp"
+            android:text="简介"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/introduction"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/item_button"
+            android:text="标签1"
+            android:textColor="#ffffff"
+            android:visibility="visible" />
+
+        <com.schoolbuy.view.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/itemName"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            app:border_color="#ffffff"
+            app:border_width="1dp" />
+
+        <TextView
+            android:id="@+id/changefor"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/contact"
+            android:layout_below="@+id/contact"
+            android:textColor="#8d8d8d"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title1"
+            android:layout_alignBottom="@+id/title1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/title1"
+            android:background="@drawable/item_button"
+            android:text="标签2"
+            android:textColor="#ffffff"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tag2"
+            android:layout_alignBottom="@+id/tag2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tag2"
+            android:background="@drawable/item_button"
+            android:text="标签3"
+            android:textColor="#ffffff"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/changefor"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:text="用户名"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/title"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9dp"
+        android:background="#00000000"
+        android:clickable="false"
+        android:text="编辑"
+        android:textColor="#ffffffff"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top"
+        android:background="#ffffffff" >
+
+        <TextView
+            android:id="@+id/createTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:text="创建时间"
+            android:textColor="#8d8d8d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/itemNowStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/createTime"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13dp"
+            android:text="等待交易中"
+            android:textColor="#d74f1d"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

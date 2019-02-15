@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaedf1" >
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/title" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="订单详情"
+        android:textColor="#ffffffff"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="#ffffffff" >
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/itemImage"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/itemImage"
+            android:text="物品名称"
+            android:textColor="#959596" />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemName"
+            android:layout_below="@+id/itemName"
+            android:layout_marginTop="10dp"
+            android:text="物品价格"
+            android:textColor="#959596" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/itemName"
+            android:layout_alignBottom="@+id/itemName"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="交易状态"
+            android:textColor="#CC0000" />
+
+        <ImageButton
+            android:id="@+id/confirm"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/itemImage"
+            android:layout_alignLeft="@+id/status"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_record_confirm_button" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/item_line_bottom" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="85dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_marginTop="147dp"
+            android:background="@drawable/item_button"
+            android:text="取消交易"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sellAgain"
+            android:layout_width="85dp"
+            android:layout_height="26dp"
+            android:layout_alignBaseline="@+id/cancel"
+            android:layout_alignBottom="@+id/cancel"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/cancel"
+            android:background="@drawable/item_button"
+            android:text="再次卖出"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/itemKind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemPrice"
+            android:layout_below="@+id/itemPrice"
+            android:layout_marginTop="10dp"
+            android:text="物品种类"
+            android:textColor="#959596" />
+
+        <TextView
+            android:id="@+id/itemIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemKind"
+            android:layout_below="@+id/itemKind"
+            android:layout_marginTop="10dp"
+            android:text="简介"
+            android:textColor="#959596" />
+
+        <TextView
+            android:id="@+id/waitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/confirm"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="请等待对方确认"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="21dp"
+        android:background="#ffffffff" >
+
+        <ImageView
+            android:id="@+id/recordIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/person_record_buy" />
+
+        <TextView
+            android:id="@+id/timeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/recordIcon"
+            android:text="用户名"
+            android:textColor="#959596" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/userImage"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/item_button"
+            android:text="联系对方"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignLeft="@+id/timeNumber"
+            android:layout_below="@+id/recordIcon"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="20dp"
+        android:background="#ffffffff" >
+
+        <TextView
+            android:id="@+id/recordID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="7dp"
+            android:text="订单编号"
+            android:textColor="#959596" />
+
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/recordID"
+            android:layout_below="@+id/recordID"
+            android:layout_marginTop="14dp"
+            android:text="创建时间"
+            android:textColor="#959596" />
+
+        <TextView
+            android:id="@+id/endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/startTime"
+            android:layout_below="@+id/startTime"
+            android:layout_marginTop="6dp"
+            android:text="确认时间"
+            android:textColor="#959596" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

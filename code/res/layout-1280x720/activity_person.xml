@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaedf1" xmlns:app="http://schemas.android.com/apk/res/com.example.schoolbuy">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/main_down" />
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="#47639e" />
+
+    <ImageView
+        android:id="@+id/infor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/person_infor" />
+
+    <ImageButton
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/infor"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_record_button" />
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="68dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_setting_button" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#00000000" />
+
+    <com.schoolbuy.view.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        app:border_color="#ffffff"
+        app:border_width="3dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="            " />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:text=" 注册账号 >"
+        android:textColor="#959596"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/log"
+        android:layout_width="70dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_log" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="个人"
+        android:textColor="#ffffffff"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/credit"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_alignBaseline="@+id/message"
+        android:layout_alignBottom="@+id/message"
+        android:layout_alignRight="@+id/home"
+        android:layout_marginRight="10dp"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="147dp"
+        android:layout_toRightOf="@+id/message"
+        android:background="#00000000" />
+
+    <ImageButton
+        android:id="@+id/item"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/like"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_item_button" />
+
+    <ImageButton
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aboutButton"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_like_button" />
+
+</RelativeLayout>

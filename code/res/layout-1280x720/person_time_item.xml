@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" xmlns:app="http://schemas.android.com/apk/res/com.example.schoolbuy">
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemIcon" />
+
+    <com.schoolbuy.view.CircleImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:border_color="#ffffff"
+        app:border_width="3dp" />
+
+    <ImageButton
+        android:id="@+id/detail"
+        android:layout_width="50dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/itemIcon"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="25dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_record_arrow" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/itemIcon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/itemIcon"
+        android:text="物品名称"
+        android:textColor="#959596"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/timeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="暂时没有轨迹"
+        android:textColor="#f8aa33"
+        android:textSize="12sp" />
+
+</RelativeLayout>

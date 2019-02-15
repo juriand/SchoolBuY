@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="13dp" xmlns:app="http://schemas.android.com/apk/res/com.example.schoolbuy">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.schoolbuy.view.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icon_noset"
+            app:border_color="#ffffff"
+            app:border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:background="@drawable/chat_left_qp"
+            android:gravity="left|center"
+            android:maxWidth="225.0dip"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:textColor="#ff000000"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

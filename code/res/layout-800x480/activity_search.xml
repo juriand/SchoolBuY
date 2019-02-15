@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaedf1" >
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/search_top" />
+
+    <Spinner
+        android:id="@+id/kindSpinner"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kindSpinner"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/kindSpinner"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="找找你想要的"
+        android:textColor="#47639e"
+        android:textColorHint="#cdcacb" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="9dp"
+        android:background="#00000000"
+        android:text="搜索"
+        android:textColor="#ffffff"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/load_nothing"
+        android:layout_width="74dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/load_icon_nothing"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:divider="#00000000"
+        android:dividerHeight="18dp"
+        android:scrollbars="none" >
+
+    </ListView>
+
+</RelativeLayout>

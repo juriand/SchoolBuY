@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" xmlns:app="http://schemas.android.com/apk/res/com.example.schoolbuy">
+
+    <com.schoolbuy.view.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        app:border_color="#ffffff"
+        app:border_width="3dp" />
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/icon"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/item_line_top" />
+
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/icon"
+        android:layout_below="@+id/itemName"
+        android:layout_marginTop="5dp"
+        android:text="简介"
+        android:textColor="#8d8d8d"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/introduction"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="13dp"
+        android:text="宝贝名称"
+        android:textColor="#8d8d8d"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/introduction" />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="85dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/username"
+        android:layout_marginLeft="120dp"
+        android:layout_toRightOf="@+id/username"
+        android:background="@drawable/item_button"
+        android:text="我有这个"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/icon"
+        android:text="用户名"
+        android:textColor="#8d8d8d"
+        android:textSize="15sp" />
+
+</RelativeLayout>

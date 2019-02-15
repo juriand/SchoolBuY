@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" xmlns:app="http://schemas.android.com/apk/res/com.example.schoolbuy">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#f5f5f5" />
+
+    <com.schoolbuy.view.CircleImageView
+        android:id="@+id/itemImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/top"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        app:border_color="#ffffff"
+        app:border_width="3dp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/itemImage"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/itemImage"
+        android:text="物品名称"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemName"
+        android:layout_below="@+id/itemName"
+        android:layout_marginTop="5dp"
+        android:text="物品价格"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemPrice"
+        android:layout_alignRight="@+id/cancel"
+        android:layout_marginRight="15dp"
+        android:text="交易状态"
+        android:textColor="#d74f1d" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="85dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/item_button"
+        android:clickable="false"
+        android:text="取消交易"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/sellAgain"
+        android:layout_width="85dp"
+        android:layout_height="26dp"
+        android:layout_alignBaseline="@+id/cancel"
+        android:layout_alignBottom="@+id/cancel"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/cancel"
+        android:background="@drawable/item_button"
+        android:clickable="false"
+        android:text="再次卖出"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="157dp" />
+
+    <Button
+        android:id="@+id/chat"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:layout_alignBaseline="@+id/sellAgain"
+        android:layout_alignBottom="@+id/sellAgain"
+        android:layout_alignLeft="@+id/top"
+        android:background="@drawable/item_button"
+        android:text="联系对方"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/recordIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/top"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/person_record_buy" />
+
+    <TextView
+        android:id="@+id/timeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/recordIcon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/recordIcon"
+        android:text="用户名"
+        android:textColor="#959596" />
+
+    <ImageButton
+        android:id="@+id/detail"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/timeNumber"
+        android:layout_marginRight="6dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_record_arrow" />
+
+    <TextView
+        android:id="@+id/waitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/confirm"
+        android:layout_below="@+id/itemPrice"
+        android:text="请等待对方确认"
+        android:textColor="#959596"
+        android:textSize="13sp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/confirm"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/waitText"
+        android:layout_alignRight="@+id/top"
+        android:layout_marginRight="10dp"
+        android:background="#00000000"
+        android:clickable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/person_record_confirm_button"
+        android:visibility="invisible" />
+
+</RelativeLayout>

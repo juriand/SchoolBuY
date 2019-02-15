@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/kind2"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_alignBaseline="@+id/kind1"
+        android:layout_alignBottom="@+id/kind1"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/kind1"
+        android:background="@drawable/item_kind2"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/kind3"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_alignLeft="@+id/kind1"
+        android:layout_below="@+id/kind1"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/item_kind3"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/kind4"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_alignBaseline="@+id/kind3"
+        android:layout_alignBottom="@+id/kind3"
+        android:layout_alignLeft="@+id/kind2"
+        android:background="@drawable/item_kind4"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/kind1"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/item_kind1"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/kind5"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/kind3"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/kind2"
+        android:background="@drawable/item_kind5"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/kind5"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
